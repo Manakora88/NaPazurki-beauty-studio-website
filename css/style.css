@@ -114,21 +114,21 @@ nav .menu li a:hover {
 .ann, .tos {
     width: 300px;
     height: 300px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
     border-radius: 50%;
     margin: 20px auto;
     border: 5px solid white;
 }
 
 .ann {
-  background: url('../img/Ania-avatar.png') no-repeat center center;
+  background: url('../img/Ania-avatar.jpg') no-repeat center center;
 }
 
 .tos {
-  background: url('../img/Tosia-avatar.png') no-repeat center center;
+  background: url('../img/Tosia-avatar.jpg') no-repeat center center;
 }
 
 .person p:first-child {
@@ -167,6 +167,12 @@ nav .menu li a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 10px auto;
+}
+
+.nails:hover, .makeup:hover, .henna:hover {
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(24,28,66,1);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(24,28,66,1);
+    box-shadow: 0px 0px 35px 0px rgba(24,28,66,1);
 }
 
 .offer-title {
@@ -232,6 +238,7 @@ nav .menu li a:hover {
     min-height: 400px;
     overflow: hidden;
     display: flex;
+    cursor: pointer;
 }
 
 .panels .panel {
