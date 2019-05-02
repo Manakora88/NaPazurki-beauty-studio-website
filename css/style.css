@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 35px;
+    margin: 30px 0;
+}
+
+.scrollup {
+    position: fixed;
+    display: none;
+    bottom: 10px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+    z-index: 2;
+    background-color: rgba(181,105,105,0.5);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.scrollup:hover {
+    background-color: rgba(181,105,105,0.9);
+}
+
+/*Header*/
+header {
+    background-color: white;
+}
+
+.logo {
+    min-height: 100px;
+    background: url('../img/logo.jpg') no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+    margin-top: 20px;
+}
+
+nav {
+    min-height: 70px;
+}
+
+nav button {
+    margin: 0 auto;
+}
+
+nav .menu {
+    font-family: 'Lobster', cursive;
+    list-style-type: none;
+    line-height: 70px;
+    font-size: 24px;
+}
+
+nav .menu li {
+    text-transform: lowercase;
+    text-align: center;
+}
+
+nav .menu li a {
+    color: #b56969 !important;
+    text-decoration: none;
+}
+
+nav .menu li a:hover {
+    color: #22264b !important;
+}
+
+/*Section "main"*/
+.main {
+    background: url('../img/main.jpg') no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+/*Section "about"*/
+.about {
+    background-color: #22264b;
+    width: 100%;
+    padding: 30px 0 40px 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: justify;
+    color: #e8edf3;
+}
+
+.about .title {
+    color: #b56969;
+}
+
+.about p {
+    padding: 5px 0;
+}
+
+.ann, .tos {
+    width: 300px;
+    height: 300px;
+    background: url('../img/avatar.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 5px solid white;
+}
+
+.person p:first-child {
+    font-family: 'Lobster', cursive;
+    color: #b56969;
+    font-size: 22px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.person p:last-child {
+    padding: 20px 30px;
+    font-size: 16px;
+}
+
+/*Section "offer"*/
+.offer {
+    background-image: url('../img/symphony.png');
+    width: 100%;
+    padding: 20px 0 50px 0;
+}
+
+.offer .title {
+    color: #22264b;
+}
+
+.offer a {
+    text-decoration: none;
+    color: white;
+}
+
+.nails, .makeup, .henna {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px auto;
+}
+
+.offer-title {
+    background-color: rgba(13,15,29,0.2);
+    width: 100%;
+    height: 80px;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.nails {
+     background-image: url('../img/offer/nails.jpg');
+}
+.makeup {
+     background-image: url('../img/offer/makeup.jpg');
+}
+.henna {
+     background-image: url('../img/offer/henna.jpg');
+}
+
+/*Section "price"*/
+.price {
+    background-color: #22264b;
+    width: 100%;
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.price .title {
+	color: #b56969;
+}
+
+.kind {
+    font-size: 26px;
+    text-align: center;
+    color: #b56969;
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.var {
+    margin-bottom: 40px;
+}
+
+.var p {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 20px;
+    color: #e8edf3;
+}
+
+.var p span {
+    padding-left: 30px;
+    color: #b56969;
+    font-weight: 700;
+}
+
+.panels {
+    min-height: 400px;
+    overflow: hidden;
+    display: flex;
+}
+
+.panels .panel {
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,.1);
+    transition:
+        flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+        background 0.2s;
+    background-size: cover;
+    background-position: bottom;
+    flex: 1;
+}
+
+.panel1 {
+    background-image: url(../img/n1.jpg);
+}
+
+.panel2 {
+    background-image: url(../img/n2.jpg);
+}
+
+.panel3 {
+    background-image: url(../img/n3.jpg);
+}
+
+.panel4 {
+    background-image: url(../img/n4.jpg);
+}
+
+.panel5 {
+    background-image: url(../img/n5.jpg);
+}
+
+.panel6 {
+    background-image: url(../img/n6.jpg);
+}
+
+.panel7 {
+    background-image: url(../img/n7.jpg);
+}
+
+.panel > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+}
+
+.panel.open {
+    flex: 4;
+}
+
+/*Section "slider"*/
+.mySlides {
+    display: none
+}
+
+.mySlides img {
+    width: 40%;
+}
+
+.slidercontainer {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .7
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/*Section "contact"*/
+.contact {
+    background-image: url(../img/symphony.png);
+    width: 100%;
+    padding: 30px 0 40px 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #22264b;
+}
+
+.contact .title {
+    color: #22264b;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.contact span {
+    color: #b56969;
+}
+
+.map {
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+    border: 6px solid white;
+    box-shadow: 5px 5px 5px grey;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: #22264b;
+    line-height: 100px;
+    color: #e8edf3;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p span {
+    color: #b56969;
+    font-weight: 700;
+}
+
+.fb, .tw, .inst {
+    margin: 25px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+}
+
+.fb {
+    background-image: url(../img/media/fb.jpg);
+}
+
+.tw {
+    background-image: url(../img/media/twit.jpg);
+}
+
+.inst {
+    background-image: url(../img/media/insta.jpg);
+}
